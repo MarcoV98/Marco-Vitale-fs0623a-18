@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Spectral&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&family=Spectral&display=swap');
+
+
+/* per questioni di tempo, non sono riuscito a rendere la pagina pienamente responsive*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-family:'Spectral', serif;
+    color: #191919;
+}
+
+ul {
+    list-style: none;
+}
+
+#headerNormal {
+    background-color: #ffc017;
+    padding: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-bottom: 1px solid #191919;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    transition: background-color 0.5s ease;
+}
+
+.headerScrolled {
+    background-color: white !important;
+}
+
+#logo {
+    margin-left: 0.2rem;
+}
+
+nav {
+    display: none;
+}
+
+header button {
+    background-color: #191919;
+    color: white;
+    font-weight: bold;
+    padding: 0.6rem 1rem;
+    border-radius: 50px;
+    margin-right: 0.2rem;
+}
+
+header button.buttonScrolled {
+    background-color: #1a8917; 
+    color: white;
+}
+
+#sctBig {
+    background-color: #ffc017;
+    display: flex;
+    flex-direction: column;
+    padding: 9.7rem 1.5rem 5.7rem 1.5rem;
+    border-bottom: #191919 1px solid;
+}
+
+#slogan {
+    font-family:'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+#subSlogan {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2.8rem;
+}
+
+#sctBig button {
+    align-self: flex-start;
+    padding: 0.5rem 2.8rem;
+    background-color: #191919;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#starContainer {
+    display: none;
+} 
+
+#contentWrapper {
+    padding: 2.5rem 1rem;
+}
+
+#trendingTitle {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+#trendingTitle ion-icon {
+    font-size: 1.5rem;
+}
+
+#trendingTitle h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 0.5rem;
+}
+
+#cardWrapper {
+    border-bottom: lightgray 1px solid;
+}
+
+.trendingCard {
+    margin-bottom: 1.5rem;
+}
+
+.trendingColumn {
+    display: inline-block;
+}
+
+.sTitle{   
+    font-size: 2rem;
+    color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    position: relative;
+    bottom: 3.6rem;
+    margin-right: 1rem;
+}
+
+.lTitle {
+    font-size: 2rem;
+    color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    position: relative;
+    margin-right: 1rem;
+    bottom: 4.7rem
+}
+
+.trendingCard img, .contentCredits img {
+    border-radius: 100%;
+    width: 21.2px;
+    height: 20.7px;
+}
+
+.trendingCredits {
+    display: flex;
+    align-items: center;
+}
+
+.trendingCredits img {
+    margin-right: 0.5rem;
+}
+
+h4 {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bolder;
+    margin: 1rem 0;
+    max-width: 235px;
+}
+
+.trendingColumn p, .contentDate p {
+    color: #6b6b6b;
+    font-size: 0.9rem;
+}
+
+aside {
+    font-weight: bold;
+    border-bottom: lightgrey 1px solid;
+}
+
+aside h2 {
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+}
+
+aside ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+aside ul li {
+    background-color: #f2f2f2;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0.7rem 1rem;
+    border-radius: 50px;
+}
+
+aside ul li:first-of-type, aside ul li:nth-of-type(4), aside ul li:nth-of-type(7) {
+    margin-left: 0;
+}
+
+aside a {
+    display: block;
+    color: #1a8917;
+    text-decoration: none;
+    padding-bottom: 1.8rem;   
+}
+
+#contentOptions ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+#contentOptions ul li {
+    color: lightgray;
+    margin-left: 1rem;
+}
+
+.contentCredits {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.contentCard {
+    margin-bottom: 2rem;
+}
+
+.contentCard h3{
+    font-size: 1.3rem;
+}
+
+.contentCard h3 + p {
+    max-width: 90%;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.contentDate {
+    display: flex;
+    align-items: center;
+}
+
+.contentDate p {
+    font-size: 0.9rem;
+}
+
+.contentDate span {
+    display: inline-block;
+    background-color: lightgray;
+    border-radius: 50px;
+    padding: 0.1rem;
+}
+
+.contentCard {
+    display: flex;
+    align-items: center;
+}
+
+.contentImg img {
+    width: 90%;
+    padding-left: 0.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+    
+    #headerNormal {
+        justify-content: space-around;
+    }
+
+    nav {
+        display: block;
+        position: relative;
+        left: 150px
+    }
+
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin-left: 1rem;
+    }
+
+    #starContainer {
+        display: block;
+    }
+
+    #sloganContanier {
+        max-width: 55%;
+    }
+
+    #sctBig {
+        display: flex;
+        flex-direction: row;
+    } 
+}
+
